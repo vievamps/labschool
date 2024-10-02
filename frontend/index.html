@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Crie uma conta</h1>
+                <span>É rápido e fácil.</span>
+                <div class="input-box">
+                <input type="text" placeholder="Nome">
+                <i class='bx bxs-user' ></i>
+                </div>
+                <div class="input-box">
+                <input type="email" placeholder="Email">
+                <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box">
+                <input type="password" placeholder="Senha">
+                <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button>Cadastre-se</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Login</h1>
+                <span>Entre com suas credencias</span>
+                <div class="input-box">
+                    <input type="text" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Senha" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="forgotPass">
+                    <a href="">Esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <img src="img/education-cap.png" alt="">
+                    <h5 id="saberhub">SaberHub</h5>
+                    <h1 id="neon">Bem vindo de volta!</h1>
+                    <p id="boasvindas">Transforme sua rotina de ensino com o SaberHub, o aplicativo que facilita a gestão de tarefas para professores! </p>
+                    <button id="login">Entrar</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <img src="img/education-cap.png" alt="">
+                    <h5 id="saberhub">SaberHub</h5>
+                    <h1>Comece a usar</h1>
+                    <p>Redescubra uma nova forma de simplificar a correção de tarefas! <br> Junte-se a nós e transforme sua experiência como professor.</p>
+                    <button id="register">Cadastre-se</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

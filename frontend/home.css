@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100% ;
+    width: 250px;
+    padding: 10px 14px;
+    background-color: #fff;
+
+}
+body{
+    height: 100vh;
+    background: #E4E9F7;
+
+}
+.sidebar .text{
+    font-size: 16px;
+    font-weight: 500;
+    color:#707070
+}
+.sidebar  .image{
+    min-width:60px ;
+    display: flex;
+    align-items: center ;
+}
+
+.sidebar header .image-text{
+    display: flex;
+    align-items:  center;
+}
+header .image-text .header-text{
+display: flex ;
+flex-direction: column;
+
+}
+.header-text .name{
+    font-weight: 600;
+
+}
+.sidebar header .toggle{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    background-color: #695cfe;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    border-radius:50% ;
+    color: #fff;
+    font-size: 22px;
+
+
+}
+.sidebar header{
+
+position: relative;
+
+}
+.sidebar li{
+    height: 50px;
+    margin-top: 10px;
+    list-style:none ;
+    display: flex;
+    align-items: center;
+
+
+}
+.sidebar li .icon{
+    font-size: 20px;
+   min-width: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center ;
+  
+
+}
+.sidebar li .icon,.sidebar li text{
+       color: #707070;
+       transition: all 0.4s ease;
+    
+    }
+.sidebar li a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.sidebar .search-box{
+    background: #f6f5ff;
+}
+.search-box input{
+    height: 100%;
+    width: 100%;
+    background:#f6f5ff ;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+
+
+}
+.sidebar li a:hover{
+    
+ background: #695cfe;
+
+}
+.sidebar li a:hover .icon, .sidebar li a:hover .text{
+    color: #fff;
+    }
