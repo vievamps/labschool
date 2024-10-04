@@ -8,28 +8,31 @@ function searchTurmas() {
 
             let html = ""
 
+            console.log(data)
+
             for(let turmas of data){
                 html += `<tr>
                 <th scope="row">${turmas.id}</th>
                 <td>${turmas.nome}</td>
                 <td>${turmas.periodo}</td>
                 <td>${turmas.professor}</td>
-                <td><button class="btn btn-success" onclick="redirect(${turmas.id})">Editar</button></td>
-                <td><button class="btn btn-danger" onclick="deleteTurma(${turmas.id})">Excluir</button></td>
+                <td><button type="button" class="btn btn-success" onclick="redirect(${turmas.id})">Editar</button></td>
+                <td><button type="button" class="btn btn-danger" onclick="deleteTurma(${turmas.id})">Excluir</button></td>
                 </tr>`
             }
             document.getElementById('table-body').innerHTML = html
         }
     ).catch(err => console.error(err))
 }
+
+
 function deleteTurma(id_turma){
-    axios.delete(`${url}/turma/${id_turma}`).then(
-        (response) => {
-            alert(response.data.result)
-            searchTurmas()
-        }
-    ).catch(err => console.error(err))
+    axios.delete(`${url}/turma/${id_turma}`).then((response) => {
+        alert(response)
+        window.location.reload 
+    }).catch(err => console.error(err))
 }
+
 function createTurmas(){
     let nome = document.getElementById('nomeTurma').value
     let periodo = document.getElementById('Periodo').value
@@ -55,39 +58,6 @@ function createTurmas(){
 function redirect(id_turma){
     window.location.href = `http://localhost/FRONTEND/atualizarTurma.html?id_turma=${id_turma}`
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function readAtividades() {
